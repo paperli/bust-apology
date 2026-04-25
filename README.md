@@ -1,5 +1,7 @@
 # apology
 
+> ⚠️ **For fun only.** This is a joke / hobby project. The "ASCII bust meter" is adult-humor styling, not a serious product. If your context is professional, sensitive, or otherwise inappropriate for casual humor, **do not install this skill** — see [Disclaimer](#disclaimer) below.
+
 This repository contains the **ASCII Apology Modulator**, a [Claude Code](https://claude.com/claude-code) skill that formats apology responses with a severity-scaled ASCII bust meter, a safety gate, and a corrective next-step template.
 
 When the user complains about output quality, Claude scores the complaint from 1 to 5 and renders a one-line ASCII meter that grows with severity, paired with a concise apology and a concrete fix.
@@ -125,3 +127,27 @@ ascii-apology-modulator/
 - **Skill doesn't trigger.** Restart Claude Code — skills are loaded at session start. If it still doesn't trigger, the `description` in `SKILL.md` is the most likely culprit; it must match the kind of message the user is sending.
 - **Wrong meter characters.** The skill is strict about the bust-meter glyphs (`( . )`, `(  o  )`, `(   O   )`, `(    O    )`, `(     @     )`). If you see emoji, `:(`, or other ASCII art, the skill body is being skipped — confirm `SKILL.md` resolves at `~/.claude/skills/ascii-apology-modulator/SKILL.md`.
 - **Meter appears in serious contexts.** The safety gate should suppress it; if not, the complaint may not have read as high-stakes. Add explicit signals ("legal," "production," "customer-facing") and re-test.
+
+## Disclaimer
+
+This project is a **personal, for-fun experiment**. It is not a product, not a service, and is not affiliated with, endorsed by, or supported by Anthropic, Claude Code, or any employer of the author.
+
+By installing, running, modifying, distributing, or otherwise using anything in this repository ("the Software"), **you accept full and sole responsibility** for:
+
+- **Where you install it.** The skill is designed to run on your personal machine in casual contexts. Installing it on shared, enterprise, customer-facing, classroom, recorded, or otherwise non-private systems is your decision and your risk.
+- **What it generates.** Outputs are produced by a large language model interpreting these instructions. The author makes no guarantee that any output will be appropriate, accurate, safe, professional, work-safe, or free of content that could embarrass, offend, harm, or otherwise negatively affect you, your colleagues, your employer, your clients, or any third party.
+- **Who sees it.** If a meter, glyph, phrase, screenshot, or any other output ends up in a meeting, demo, recording, screen-share, support ticket, code review, blog post, social media post, courtroom, performance review, or any other context where it causes problems, that consequence is yours alone.
+- **Compliance.** You are responsible for ensuring use of this skill complies with all applicable laws, contracts, employer policies, AI usage policies, code-of-conduct rules, terms of service (including those of Anthropic and Claude Code), and ethical norms in your jurisdiction and workplace.
+- **Children and unintended audiences.** Do not install this skill on machines used by minors or in contexts where minors may be present. The author disclaims all responsibility for exposure to anyone for whom adult-humor framing is inappropriate.
+
+**The author expressly disclaims any and all responsibility, liability, warranty, indemnity, or duty of care** arising from use, misuse, or non-use of this Software, including but not limited to direct, indirect, incidental, consequential, special, exemplary, punitive, reputational, professional, financial, or emotional damages, regardless of the legal theory under which such claim might arise (contract, tort, statute, or otherwise), and regardless of whether the author has been advised of the possibility of such damages.
+
+**If you do not accept these terms, do not install or use this Software.** Installing it is your acknowledgment that you have read this disclaimer and accept full responsibility for everything that follows.
+
+Reasonable adults only. Use at your own risk. Don't blame me.
+
+## License
+
+[MIT](LICENSE) © 2026 Paper Lee
+
+The MIT License is permissive but includes its own "AS IS" warranty disclaimer and limitation of liability. Both that license and the [Disclaimer](#disclaimer) above apply to all use of this Software.
