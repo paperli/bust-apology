@@ -1,0 +1,10 @@
+{
+  "name": "bust-apologizer",
+  "description": "A playful Claude Code skill: severity-scaled ASCII apology meter for output-quality complaints.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Paper Lee"
+  },
+  "homepage": "https://github.com/paperli/bust-apologizer",
+  "license": "MIT"
+}

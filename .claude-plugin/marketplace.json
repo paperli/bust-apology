@@ -1,0 +1,17 @@
+{
+  "name": "bust-apologizer",
+  "owner": {
+    "name": "Paper Lee",
+    "url": "https://github.com/paperli"
+  },
+  "plugins": [
+    {
+      "name": "bust-apologizer",
+      "description": "A playful Claude Code skill: severity-scaled ASCII apology meter for output-quality complaints.",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/paperli/bust-apologizer"
+      }
+    }
+  ]
+}
